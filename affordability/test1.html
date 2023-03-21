@@ -1,22 +1,33 @@
-<html>
+
+<!DOCTYPE html>
+  <html>
   <head>
-    <script src="https://localhost:3000/widgets.bundle.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Itim">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>html { font-family: "Lato", sans-serif }</style>
   </head>
-  <body style="background-color:#9d85c4;font-family: Itim;">
-    <div id="app"></div>
+  <body>
+    
+      <div id="root"></div>
+      <script src="https://s3.eu-west-1.amazonaws.com/widgets-dev.moneyhub.co.uk/widgets.bundle.js"></script>
 
-    <script type="text/javascript">
-      window.moneyhub.init({
-        type: "affordability",
-        elementId: "app", 
-        widgetId: "65d30c1c-90bd-428b-8762-33256644f107",
-        params: {
-          externalUserId: `test${Math.floor(Math.random() * 1000)}`
-        },
-        logger: console
-      })
-    </script>
-
+      <script>
+        window.moneyhub.init({
+          elementId: "root",
+          type: "affordability",
+          widgetId: "2ee9b9d0-3698-4cc8-993f-f1f23d229f8a",
+          params:{
+            externalUserId: `test${Math.floor(Math.random() * 1000)}`
+          },
+          logger: console,
+        })
+      </script>
+    
   </body>
 </html>
