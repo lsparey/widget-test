@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script src="https://localhost:3000/widgets.bundle.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Itim">
+  </head>
+  <body style="background-color:#9d85c4;font-family: Itim;">
+    <div id="app"></div>
+
+    <script type="text/javascript">
+      window.moneyhub.init({
+        type: "affordability",
+        elementId: "app", 
+        widgetId: "65d30c1c-90bd-428b-8762-33256644f107",
+        params: {
+          externalUserId: `test${Math.floor(Math.random() * 1000)}`
+        },
+        logger: console
+      })
+    </script>
+
+  </body>
+</html>
